@@ -74,7 +74,7 @@ class Tamagotchi
 define_method(:sleep) do
   @activity_level = 0
   @food_level -= 4
-  @sleep_level = 11
+  @sleep_level += 6
   self.update_time()
   self.update_health_level()
 end

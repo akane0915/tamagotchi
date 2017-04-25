@@ -1,5 +1,19 @@
-<%= # sample output html
-# <h2><%= @message %></h2>
-# <hr>
-# <a href="/" class="btn btn-danger">reset</a>
-%>
+
+<h2><%=@@my_pet.name%>'s:</h2>
+<h4> Food level = <%= @food%></h4>
+<h4> Sleep level = <%= @sleep%></h4>
+<h4> Activity level = <%= @activity%></h4>
+<h1> <%= @dead %></h1>
+<hr>
+
+<a href="/feed" class="btn btn-default">Feed</a>
+
+<a href="/sleep" class="btn btn-default">Sleep</a>
+
+<a href="/walk" class="btn btn-default">Walk</a>
+
+<a href="/run" class="btn btn-default">Run</a>
+
+<a href="/surf" class="btn btn-default">Surf</a>
+
+<a href="/crossfit" class="btn btn-default">Crossfit</a>
