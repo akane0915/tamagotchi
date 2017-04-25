@@ -33,13 +33,13 @@ class Tamagotchi
 
   define_method(:set_food_level) do
     if @activity_level < 3
-      @food_level =- 2
+      @food_level -= 2
     elsif @activity_level < 5
-      @food_level =- 4
+      @food_level -= 4
     elsif @activity_level < 8
-      @food_level =- 6
+      @food_level -= 6
     else
-      @food_level =- 10
+      @food_level -= 10
     end
   end
 
@@ -62,6 +62,12 @@ class Tamagotchi
   define_method(:sleep) do
     @activity_level = 0
     @food_level -= 5
+  end
+
+  define_method(:update_health) do
+    if @food_level < 5
+      @health -= 2
+    end
   end
 
 

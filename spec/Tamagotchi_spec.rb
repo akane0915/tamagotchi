@@ -43,4 +43,15 @@ describe(Tamagotchi)do
       expect(my_pet.food_level()).to(eq(5))
     end
   end
+
+  describe('#update_health') do
+    it('subtracts 2 from the health if food level drops below 5') do
+      my_pet = Tamagotchi.new('Rex')
+      my_pet.crossfit()
+      my_pet.update_health()
+      expect(my_pet.health()).to(eq(8))
+    end
+  end
+
+
 end
