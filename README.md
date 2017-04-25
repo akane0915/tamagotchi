@@ -28,8 +28,9 @@ Installation is quick and easy! First you can open this link <!--HEROKU LINK HER
 
 | behavior |  input   |  output  |
 |----------|:--------:|:--------:|
-<!--SPECS GO HERE-->
- 
+|Use initialize method to create a new Tamagotchi and set the name and life level|||
+|Use is_alive method to check if Tamagotchi is alive based on food level > 0|||
+
 ## Authors
 
 * <!--YOUR NAME HERE-->
