@@ -59,5 +59,10 @@ class Tamagotchi
     @activity_level += 10
   end
 
+  define_method(:sleep) do
+    @activity_level = 0
+    @food_level -= 5
+  end
+
 
 end

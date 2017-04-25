@@ -28,4 +28,19 @@ describe(Tamagotchi)do
       expect(my_pet.is_alive?()).to(eq(false))
     end
   end
+
+  describe('#sleep') do
+    it('resets activity_level to zero when Tamagotchi sleeps') do
+      my_pet = Tamagotchi.new('Rex')
+      my_pet.surf()
+      my_pet.sleep()
+      expect(my_pet.activity_level()).to(eq(0))
+    end
+
+    it('subtracts 5 from food level when Tamagotchi sleeps') do
+      my_pet = Tamagotchi.new('Rex')
+      my_pet.sleep()
+      expect(my_pet.food_level()).to(eq(5))
+    end
+  end
 end
